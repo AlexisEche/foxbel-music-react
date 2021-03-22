@@ -1,23 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+import {PrimaryButton, SecondaryButton} from './components/UI/Buttons';
+import AlbumCard from './components/AlbumCard';
+import AlbumDetail from './components/AlbumDetail';
+import ContainerAlbums from './components/ContainerAlbums';
+import FooterReproductor from './components/FooterReproductor';
+import Search from './components/Search';
+import Sidebar from './components/Sidebar';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      
+      <PrimaryButton>Reproductor</PrimaryButton>
+      <SecondaryButton>Seguir</SecondaryButton>
+
     </div>
   );
 }
