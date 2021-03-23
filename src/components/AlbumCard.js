@@ -1,8 +1,16 @@
+import Icon from "./UI/Icons";
+import SongCover from "./UI/SongCover";
+
 function AlbumCard(){
   return(
-    <>
-    AlbumCard
-    </>
+    <div className="w-40 h-52	 relative ">
+      <SongCover width="160px" height="160px" className="  ">
+        <Icon  type="play" color="white" size="36px"/>
+      </SongCover>
+      <Icon position="absolute" type="dotsV" color="white" size="25px"/>
+      <p className="pt-2 text-sm">21</p>
+      <p className="text-sm">Adele</p>
+    </div>
   )
 }
 
