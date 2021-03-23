@@ -11,7 +11,13 @@ function App() {
     <div className="App">
       
       <PrimaryButton>Reproductor</PrimaryButton>
+      <Search/>
       <SecondaryButton>Seguir</SecondaryButton>
+      <AlbumDetail/>
+      <AlbumCard/>
+      <FooterReproductor/>
+      <Sidebar/>
+
 
     </div>
   );
