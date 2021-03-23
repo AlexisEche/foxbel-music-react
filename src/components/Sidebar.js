@@ -1,7 +1,7 @@
 import logo from "../assets/images/foxbel-music.png"
 function Sidebar(){
   return(
-    <div className="w-80	bg-red-900	h-screen space-y-7">
+    <div className="w-80	bg-red-900	h-11/12 space-y-7 xl:block hidden">
       <img className="w-80 h-15 pt-12 pr-10 pl-10 " src={logo} alt="logo"/>
       <div className="flex flex-col space-y-1">
         <p className="text-white text-xl	pl-9">Mi librería</p>

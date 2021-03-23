@@ -7,7 +7,7 @@ function SongInfo({ img,  children}) {
 
   return (
       <ComponentToRender
-        className="pt-10 pl-8 pb-5 	pr-8 flex z-10 bg-red-400 bg-opacity-25 flex-col justify-between"
+        className="pt-10 pl-8 pb-5 	pr-8 flex z-10 bg-red-400 bg-opacity-25 flex-col justify-between sm:m-0 m-auto "
         style={{
           background:`url(http://4.bp.blogspot.com/-3j54sIpjxD4/T7Fhg4C2Q7I/AAAAAAAAJMc/YxDMrG4mzcc/s1600/Adele6_DW_Kultur_K_1295526s.jpg)`,
           backgroundRepeat: "no-repeat",

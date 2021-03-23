@@ -5,11 +5,13 @@ import SongInfo from "./UI/SongInfo";
 
 function AlbumDetail(){
   return(
-    <div className="w-3/4 h-64 flex">
-      <SongCover width="250px" >
-        <Icon className=" " type="play" color="white" size="72px"></Icon>
-      </SongCover>
-      <SongInfo>
+    <div className="  w-full  h-64 flex">
+      <span className="xl:block hidden">
+        <SongCover width="250px" height="100%">
+          <Icon className=" " type="play" color="white" size="72px"></Icon>
+        </SongCover>
+      </span>
+      <SongInfo >
         <div className="h-24 flex flex-col justify-between">
           <p className="text-white text-2xl">Adele 21</p>
           <div className="h-44 flex flex-col justify-between">

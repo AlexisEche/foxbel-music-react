@@ -3,6 +3,10 @@ import { FaPlay } from "react-icons/fa";
 import { RiPlayCircleFill } from "react-icons/ri";
 import { IoPlaySkipBackSharp ,IoPlaySkipForwardSharp,IoVolumeOff} from "react-icons/io5";
 import { ImSearch} from "react-icons/im";
+import { FaUser} from "react-icons/fa";
+import { GiHamburgerMenu} from "react-icons/gi";
+
+
 
 const iconSet = {
   dots: BsThreeDots,
@@ -12,8 +16,9 @@ const iconSet = {
   previous:IoPlaySkipBackSharp,
   next:IoPlaySkipForwardSharp,
   volume:IoVolumeOff,
-  search:ImSearch
-
+  search:ImSearch,
+  user:FaUser,
+  menu:GiHamburgerMenu,
 }
 
 function Icon({ type, color ,size,position}) {

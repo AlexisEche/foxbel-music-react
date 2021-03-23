@@ -3,8 +3,8 @@ import SongCover from "./UI/SongCover";
 
 function AlbumCard(){
   return(
-    <div className="w-40 h-52	 relative ">
-      <SongCover width="160px" height="160px" className="  ">
+    <div className="w-40 h-52	w-full relative ">
+      <SongCover minWidth="100%" width="160px" height="160px" className="  ">
         <Icon  type="play" color="white" size="36px"/>
       </SongCover>
       <Icon position="absolute" type="dotsV" color="white" size="25px"/>

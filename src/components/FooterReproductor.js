@@ -3,7 +3,7 @@ import SongCover from "./UI/SongCover";
 
 function FooterReproductor(){
   return(
-    <div className="w-full h-full bg-red-500  flex box-border box-content	">
+    <div className="w-full m-auto h-full bg-red-500  flex box-border box-content	">
       <SongCover width="100px" height="100px" />
       <div className=" flex justify-between w-11/12 items-center pt-6 pr-8 pb-4 pl-5 ">
         <div className="space-y-2"> 
