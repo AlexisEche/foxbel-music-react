@@ -4,7 +4,7 @@ function SongCover({ src, minWidth ,height,width,children}) {
   return (
       <ComponentToRender
         style={{
-          background:`url(${src})`,
+          background:`url(${src})` ,
           backgroundRepeat: "no-repeat",
           backgroundSize:"cover",
           minWidth: `${minWidth ? "100%" : "auto" }`,
