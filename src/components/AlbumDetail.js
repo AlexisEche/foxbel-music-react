@@ -7,7 +7,8 @@ import SongCover from "./UI/SongCover";
 import SongInfo from "./UI/SongInfo";
 
 function AlbumDetail(){
-  const {data} = useContext(DataContext)
+
+  const {data ,setCurrent,principal,current} = useContext(DataContext)
   const [firstArtist, setFirstArtist] = useState(null)
   const [artistInfo, setArtistInfo] = useState("")
   
@@ -23,7 +24,7 @@ function AlbumDetail(){
   async function fetchArtist(artistId) {
       const dataService = new ArtistService();
       const data = await dataService.artist(artistId);
-      console.log(data)
+      
       setArtistInfo(data)
   }
 
@@ -32,7 +33,9 @@ function AlbumDetail(){
     <div className="w-full  h-64 flex">
       <span className="xl:block hidden">
         <SongCover src={artistInfo["picture_medium"]} width="250px" height="100%">
-          <Icon className=" " type="play" color="white" size="72px"></Icon>
+          <Icon onClick={()=>{
+              console.log(principal)
+            setCurrent(principal)}} type="play" color="white" size="72px"></Icon>
         </SongCover>
       </span>
       <SongInfo src={artistInfo["picture_big"]} >

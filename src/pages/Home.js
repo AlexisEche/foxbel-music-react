@@ -5,11 +5,11 @@ import FooterReproductor from "../components/FooterReproductor";
 import Header from "../components/Header";
 import MP3Player from "../components/MP3Player";
 import Sidebar from "../components/Sidebar";
+import Range from "../components/UI/Range";
 import { DataContext } from "../context/Context";
 import AlbumService from "../services/albumServices";
 
 function Home(){
-  const {data,setData} = useContext(DataContext)
 
   return(
     <div className="flex w-full flex-col">

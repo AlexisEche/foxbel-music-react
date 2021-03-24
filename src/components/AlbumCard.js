@@ -8,7 +8,7 @@ function AlbumCard({data}){
   return(
     <div className="w-40 h-52	w-full relative ">
       <SongCover src={data.album["cover_medium"]} minWidth="100%" width="160px" height="160px">
-        <Icon onClick={()=>setCurrent(data.preview)} type="play" color="white" size="36px"/>
+        <Icon onClick={()=>setCurrent(data)} type="play" color="white" size="36px"/>
       </SongCover>
       <Icon position="absolute" type="dotsV" color="white" size="25px"/>
       <p className="pt-2 text-sm">{data.artist["name"]}</p>
