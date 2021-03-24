@@ -17,7 +17,7 @@ function AlbumDetail() {
 			const firstArtist = fetchArtist(data.data[0].artist.id);
 			setFirstArtist(firstArtist);
 		} else {
-			console.log("Not found");
+			alert("Not found, Try again please :)")
 		}
 	}, [data]);
 
