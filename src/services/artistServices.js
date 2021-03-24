@@ -7,7 +7,7 @@ function ArtistService() {
   return ArtistService.instance;
 }
 
-ArtistService.prototype.artist = (idArtist) =>
+ArtistService.prototype.artist = (idArtist="") =>
   apiFetch(`${BASE_URL}/artist/${idArtist}`, {
     method: "GET",
     headers: {

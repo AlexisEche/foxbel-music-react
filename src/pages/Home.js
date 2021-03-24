@@ -10,17 +10,6 @@ import AlbumService from "../services/albumServices";
 function Home(){
   const {data,setData} = useContext(DataContext)
 
-//   useEffect(()=>{
-//     async function fetchData() {
-//       const dataService = new AlbumService();
-//       const data = await dataService.search("dua lipa");
-//       setData(data)
-//   }
-//   fetchData();
-
-// },[])
-//   console.log(data)    
-
   return(
     <div className="flex w-full flex-col">
       <div className="flex w-full ">

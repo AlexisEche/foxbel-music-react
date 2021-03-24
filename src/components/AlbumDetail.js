@@ -12,13 +12,13 @@ function AlbumDetail(){
   const [artistInfo, setArtistInfo] = useState("")
   
   useEffect(()=>{
-    console.log(data)
-    if(data.data){
+    if(data.data && data.data.length){
       const firstArtist = fetchArtist(data.data[0].artist.id)
       setFirstArtist(firstArtist)
+    }else{
+      console.log("not foound")
     }
   },[data])
-
   
   async function fetchArtist(artistId) {
       const dataService = new ArtistService();

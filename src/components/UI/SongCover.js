@@ -1,7 +1,6 @@
 
 function SongCover({ src, minWidth ,height,width,children}) {
   const ComponentToRender = "div";
-  console.log(src)
   return (
       <ComponentToRender
         style={{

@@ -9,7 +9,7 @@ function App() {
 
   return (
     <div className="App ">
-      <DataContext.Provider value={{data,setData,current,setCurrent}>
+      <DataContext.Provider value={{data,setData,current,setCurrent}}>
         <Home/>
       </DataContext.Provider>
     </div>

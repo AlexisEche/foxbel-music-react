@@ -13,19 +13,15 @@ function Search(){
     const dataService = new AlbumService();
     setLoading(true);
     const data = await dataService.search(query);
-    console.log(data)
     setData(data)
     setLoading(false);
   }
 
   useEffect(() => {
     let timerID;
-
     if (query !== "") {
       timerID = setTimeout(()=>fetchData(query), 1000);
-      setData(null)
       }
-
     return () => clearTimeout(timerID);
     
   }, [query]);
@@ -33,7 +29,7 @@ function Search(){
  
   useEffect(() => {
 
-    fetchData("duda lipa")
+    fetchData("dua lipa")
 
   }, []);
 
