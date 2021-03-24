@@ -42,12 +42,12 @@ function AlbumDetail(){
         <div className="h-24 flex flex-col justify-between">
           <p className="text-white text-2xl">{artistInfo.name}</p>
           <div className="h-44 flex flex-col justify-between">
-            <div className="flex items-center w-60 justify-between">
-              <p className="text-white text-sm">Lo mejor de Adele</p>
+            <div className="flex items-center w-64 justify-between">
+              <p className="text-white text-sm">Lo mejor de {artistInfo.name}</p>
               <p className="text-xs"> {artistInfo.nb_fan} seguidores</p>
             </div>
           </div>
-          <p className="text-white text-xs">Adele Laurie Blue Adkins (Tottenham, Londres, Inglaterra, 5 de mayo de 1988), conocida simplemente como Adele, es una cantante, compositora y multinstrumentista británica. </p>
+          <p className="text-white text-xs">{artistInfo.name}, conocida/o simplemente como {artistInfo.name}, es una/o cantante, compositor/a y multinstrumentista muy conocida/o en todo el mundo. </p>
         </div>
         <div className="flex items-center space-x-5">
           <PrimaryButton>Reproductor</PrimaryButton>

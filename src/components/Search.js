@@ -12,21 +12,21 @@ function Search(){
     const data = await dataService.search(query);
     setData(data)
   }
-
   useEffect(() => {
     let timerID;
     if (query !== "") {
       timerID = setTimeout(()=>fetchData(query), 1000);
-      }
+    }
     return () => clearTimeout(timerID);
     
+  // eslint-disable-next-line 
   }, [query]);
 
- 
   useEffect(() => {
 
     fetchData("dua lipa")
-
+    
+  // eslint-disable-next-line 
   }, []);
 
   return(
