@@ -1,11 +1,11 @@
 
-function SongCover({ type, minWidth ,height,width,children}) {
+function SongCover({ src, minWidth ,height,width,children}) {
   const ComponentToRender = "div";
-
+  console.log(src)
   return (
       <ComponentToRender
         style={{
-          background:`url(https://i.pinimg.com/474x/b6/57/14/b65714502dca7a57bad76a2569d3b397.jpg)`,
+          background:`url(${src})`,
           backgroundRepeat: "no-repeat",
           backgroundSize:"cover",
           minWidth: `${minWidth ? "100%" : "auto" }`,
@@ -14,7 +14,7 @@ function SongCover({ type, minWidth ,height,width,children}) {
           display:"flex",
           justifyContent:"center",
           alignItems:"center",
-          objectFit:"fill"
+          objectFit:"cover"
       }}
       >{children}</ComponentToRender>
   );

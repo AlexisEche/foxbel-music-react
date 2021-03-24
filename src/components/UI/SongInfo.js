@@ -2,14 +2,14 @@ import { BsThreeDots } from "react-icons/bs";
 import { FaPlay } from "react-icons/fa";
 import "../../assets/styles/song-info.css"
 
-function SongInfo({ img,  children}) {
+function SongInfo({ src,  children}) {
   const ComponentToRender = "div";
 
   return (
       <ComponentToRender
-        className="pt-10 pl-8 pb-5 	pr-8 flex z-10 bg-red-400 bg-opacity-25 flex-col justify-between sm:m-0 m-auto "
+        className="sm:pt-10 sm:pl-8 sm:pb-5 p-4	sm:pr-8 flex z-10 bg-red-400 bg-opacity-25 flex-col justify-between sm:m-0 m-auto "
         style={{
-          background:`url(http://4.bp.blogspot.com/-3j54sIpjxD4/T7Fhg4C2Q7I/AAAAAAAAJMc/YxDMrG4mzcc/s1600/Adele6_DW_Kultur_K_1295526s.jpg)`,
+          background:`url(${src})`,
           backgroundRepeat: "no-repeat",
           backgroundSize:"cover",
           width:"642px",

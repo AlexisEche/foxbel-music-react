@@ -36,6 +36,7 @@ function Icon({ type, color ,size,position}) {
           borderRadius:`${size ==="60px"? "50%" :"0"}` ,
           border: `${size ==="60px"? "1px solid #F47071" :"none"}`  ,
           boxShadow: `${size ==="60px"?"0px 0px 0px 6px #F7A4A5 inset":"none"}`,
+          cursor:"pointer"
       }}
       />
   );
