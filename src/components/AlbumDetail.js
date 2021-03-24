@@ -12,13 +12,18 @@ function AlbumDetail() {
 	const [firstArtist, setFirstArtist] = useState(null);
 	const [artistInfo, setArtistInfo] = useState("");
 
+  function InvalidInputMessage(){
+    console.warn("Not found, Try again please :)")
+  }
+
 	useEffect(() => {
 		if (data.data && data.data.length) {
 			const firstArtist = fetchArtist(data.data[0].artist.id);
 			setFirstArtist(firstArtist);
 		} else {
-			alert("Not found, Try again please :)")
+      return firstArtist !== null ? InvalidInputMessage() : ""   
 		}
+    // eslint-disable-next-line
 	}, [data]);
 
 	async function fetchArtist(artistId) {
