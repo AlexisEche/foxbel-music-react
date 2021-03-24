@@ -13,6 +13,7 @@ function Search(){
     const dataService = new AlbumService();
     setLoading(true);
     const data = await dataService.search(query);
+    console.log(data)
     setData(data)
     setLoading(false);
   }

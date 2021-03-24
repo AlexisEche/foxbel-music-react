@@ -1,10 +1,10 @@
-import { useContext} from "react";
+import { useContext, useState} from "react";
 import { DataContext } from "../context/Context";
 import AlbumCard from "./AlbumCard";
 
 function ContainerAlbums(){
   const {data} = useContext(DataContext)
-
+  
   return(
     data.data?<>
       <p className="pt-10 text-xl pb-5 text-red-400">Resultados</p>

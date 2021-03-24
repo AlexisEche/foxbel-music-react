@@ -3,6 +3,7 @@ import AlbumDetail from "../components/AlbumDetail";
 import ContainerAlbums from "../components/ContainerAlbums";
 import FooterReproductor from "../components/FooterReproductor";
 import Header from "../components/Header";
+import MP3Player from "../components/MP3Player";
 import Sidebar from "../components/Sidebar";
 import { DataContext } from "../context/Context";
 import AlbumService from "../services/albumServices";
@@ -21,6 +22,7 @@ function Home(){
           </div>
       </div>
       <FooterReproductor/>
+      <MP3Player/>
     </div>
   )
 }

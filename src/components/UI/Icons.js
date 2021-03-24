@@ -21,11 +21,12 @@ const iconSet = {
   menu:GiHamburgerMenu,
 }
 
-function Icon({ type, color ,size,position}) {
+function Icon({ type, color ,size,position, onClick}) {
   const ComponentToRender = iconSet[type];
 
   return (
-      <ComponentToRender
+      <ComponentToRender 
+        onClick={onClick}
         style={{
           fill:`${color}`,
           fontSize:`${size}`,

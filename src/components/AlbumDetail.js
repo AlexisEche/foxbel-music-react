@@ -23,6 +23,7 @@ function AlbumDetail(){
   async function fetchArtist(artistId) {
       const dataService = new ArtistService();
       const data = await dataService.artist(artistId);
+      console.log(data)
       setArtistInfo(data)
   }
 
