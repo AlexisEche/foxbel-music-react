@@ -1,5 +1,4 @@
 import { BASE_URL , apiFetch } from "./api-fetch"
-
 function AlbumService() {
   if (!AlbumService.instance) {
     AlbumService.instance = this;

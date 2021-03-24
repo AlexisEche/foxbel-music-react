@@ -1,6 +1,7 @@
 import { useContext, useEffect, useState } from "react";
 import { DataContext } from "../context/Context";
 import ArtistService from "../services/artistServices";
+import Loading from "./Loading";
 import { PrimaryButton, SecondaryButton } from "./UI/Buttons";
 import Icon from "./UI/Icons";
 import SongCover from "./UI/SongCover";
@@ -8,33 +9,32 @@ import SongInfo from "./UI/SongInfo";
 
 function AlbumDetail(){
 
-  const {data ,setCurrent,principal,current} = useContext(DataContext)
-  const [firstArtist, setFirstArtist] = useState(null)
-  const [artistInfo, setArtistInfo] = useState("")
+  const { data ,setCurrent,principal } = useContext(DataContext)
+  const [ firstArtist, setFirstArtist ] = useState(null)
+  const [ artistInfo, setArtistInfo ] = useState("")
   
   useEffect(()=>{
     if(data.data && data.data.length){
       const firstArtist = fetchArtist(data.data[0].artist.id)
       setFirstArtist(firstArtist)
     }else{
-      console.log("not foound")
+      console.log("Not found")
     }
   },[data])
   
   async function fetchArtist(artistId) {
-      const dataService = new ArtistService();
-      const data = await dataService.artist(artistId);
-      
-      setArtistInfo(data)
-  }
+    const dataService = new ArtistService();
+    const data = await dataService.artist(artistId);
+    
+    setArtistInfo(data)
+}
 
   return(
     firstArtist ? 
-    <div className="w-full  h-64 flex">
-      <span className="xl:block hidden">
+    <div className="w-full  h-60 flex">
+      <span className="md:block hidden">
         <SongCover src={artistInfo["picture_medium"]} width="250px" height="100%">
           <Icon onClick={()=>{
-              console.log(principal)
             setCurrent(principal)}} type="play" color="white" size="72px"></Icon>
         </SongCover>
       </span>
@@ -56,7 +56,7 @@ function AlbumDetail(){
         </div>
       </SongInfo>
     </div>
-    : "Loading"
+    : <Loading/>
   )
 }
 

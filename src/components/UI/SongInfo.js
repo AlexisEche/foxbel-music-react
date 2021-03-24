@@ -1,13 +1,9 @@
-import { BsThreeDots } from "react-icons/bs";
-import { FaPlay } from "react-icons/fa";
-import "../../assets/styles/song-info.css"
-
 function SongInfo({ src,  children}) {
   const ComponentToRender = "div";
 
   return (
       <ComponentToRender
-        className="sm:pt-10 sm:pl-8 sm:pb-5 p-4	sm:pr-8 flex z-10 bg-red-400 bg-opacity-25 flex-col justify-between sm:m-0 m-auto "
+        className="sm:pt-10 sm:pl-8 sm:pb-5 p-4	sm:pr-8 flex z-10 bg-red-400 bg-opacity-25 flex-col justify-between sm:m-0 m-auto"
         style={{
           background:`url(${src})`,
           backgroundRepeat: "no-repeat",

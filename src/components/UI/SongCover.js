@@ -13,7 +13,7 @@ function SongCover({ src, minWidth ,height,width,children}) {
           display:"flex",
           justifyContent:"center",
           alignItems:"center",
-          objectFit:"cover"
+          objectFit:"cover !important"
       }}
       >{children}</ComponentToRender>
   );

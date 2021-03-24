@@ -4,9 +4,9 @@ import Icon from "./UI/Icons";
 import SongCover from "./UI/SongCover";
 
 function AlbumCard({data}){
-  const {setCurrent, current} = useContext(DataContext)
+  const {setCurrent} = useContext(DataContext)
   return(
-    <div className="w-40 h-52	w-full relative ">
+    <div className="w-40 h-52	w-full relative">
       <SongCover src={data.album["cover_medium"]} minWidth="100%" width="160px" height="160px">
         <Icon onClick={()=>setCurrent(data)} type="play" color="white" size="36px"/>
       </SongCover>

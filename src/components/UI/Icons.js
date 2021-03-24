@@ -6,8 +6,6 @@ import { ImSearch} from "react-icons/im";
 import { FaUser} from "react-icons/fa";
 import { GiHamburgerMenu} from "react-icons/gi";
 
-
-
 const iconSet = {
   dots: BsThreeDots,
   play:FaPlay,
@@ -33,10 +31,10 @@ function Icon({ type, color ,size,position, onClick}) {
           position:`${position}`,
           top:"5px",
           right:"5px",
-          background:`${size ==="60px"?"white":"none"}`,
-          borderRadius:`${size ==="60px"? "50%" :"0"}` ,
-          border: `${size ==="60px"? "1px solid #F47071" :"none"}`  ,
-          boxShadow: `${size ==="60px"?"0px 0px 0px 6px #F7A4A5 inset":"none"}`,
+          background:`${type ==="circlePlay"?"white":"none"}`,
+          borderRadius:`${type ==="circlePlay"? "50%" :"0"}` ,
+          border: `${type ==="circlePlay"? "1px solid #F47071" :"none"}`  ,
+          boxShadow: `${type ==="circlePlay"?"0px 0px 0px 6px #F7A4A5 inset":"none"}`,
           cursor:"pointer"
       }}
       />

@@ -5,17 +5,12 @@ import Icon from "./UI/Icons";
 
 function Search(){
   const {setData} = useContext(DataContext)
-
-  const [loading, setLoading] = useState(false);
   const [query , setQuery] = useState("");
 
   async function fetchData(query) {
     const dataService = new AlbumService();
-    setLoading(true);
     const data = await dataService.search(query);
-    console.log(data)
     setData(data)
-    setLoading(false);
   }
 
   useEffect(() => {
